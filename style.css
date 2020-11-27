@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+    background-image: url(images/bg-pattern-desktop.svg);
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: cover;
+    margin: auto;
+}
+.container{
+    min-height: 80vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+.apparel {
+    display: block;
+    height: 100%;
+    width: 100%;
+    max-width: 850px;
+    margin: 0 auto;
+    position: relative;
+}
+.apparel-box {
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+}
+.hero-img {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+.hero-img img {
+    width: 400px;
+    height: 100%;
+}
+.text {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.text h1 {
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 2.5rem;
+    font-weight: 400;
+    font-size: 28px;
+    color: hsl(0, 36%, 70%);
+}
+.text strong {
+    font-weight: 600;
+    font-size: 35px;
+    color: #000000;
+    letter-spacing: 5px;
+}
+.text p {
+    color: hsl(0, 36%, 70%);
+    padding-top: 20px;
+    text-align: center;
+}
+label {
+    padding-top: 30px;
+}
+input {
+    width: 300px;
+    padding: 13px;
+    border-radius: 25px;
+    padding-left: 20px;
+    outline: none;
+    border: 1px solid hsl(0, 36%, 70%);
+}
+.button {
+    width: 75px;
+    height: 44px;
+    border: none;
+    outline: none;
+    background-color: hsl(0, 93%, 68%);
+    border-radius: 25px;
+    position: absolute;
+    right: 20px;
+    box-shadow: -20px 12px 20px 0px hsla(240, 18%, 77%, 0.52);
+}
+.button:hover {
+    background-color: hsl(0, 36%, 70%);
+}
+.button:active {
+    background-color: hsl(0, 36%, 70%);
+    transform: translateX(8px);
+}
+.button img {
+    margin: auto;
+}
+#error {
+    display: none;
+    position: absolute;
+    bottom: 88px;
+    left: 315px;
+}
+#small {
+    display: none;
+   padding: 10px;
+   color: hsl(0, 36%, 70%);
+}
+@media only screen and (min-width: 768px) {
+    .apparel-box {
+        flex-direction: row;
+        
+    }
+    .button {
+        right: 425px;
+    }
+    .hero-img img {
+        width: 350px;
+    }
+    .text h1 {
+        text-align: left;
+    }
+    .text p {
+        text-align: left;
+        line-height: 1.5rem;
+    }
+    .text {
+        align-items: baseline;
+    }
+    input {
+        width: 380px;
+    }
+    header img{
+        position: absolute;
+        top: 60px;
+        left: 250px;
+    }
+    
+}
