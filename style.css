@@ -23,7 +23,7 @@ body {
 .apparel {
     display: block;
     height: 100%;
-    width: 100%;
+    /* width: 100%; */
     max-width: 850px;
     margin: 0 auto;
     position: relative;
@@ -40,8 +40,9 @@ body {
     height: 100%;
     margin: 0 auto;
 }
-.hero-img img {
-    width: 400px;
+.hero, 
+.logo {
+    width: 300px;
     height: 100%;
 }
 .text {
@@ -89,7 +90,7 @@ input {
     background-color: hsl(0, 93%, 68%);
     border-radius: 25px;
     position: absolute;
-    right: 20px;
+    right: 0px;
     box-shadow: -20px 12px 20px 0px hsla(240, 18%, 77%, 0.52);
 }
 .button:hover {
@@ -113,7 +114,8 @@ input {
    padding: 10px;
    color: hsl(0, 36%, 70%);
 }
-@media only screen and (min-width: 768px) {
+
+@media only screen and (min-width: 667px) {
     .apparel-box {
         flex-direction: row;
         
@@ -121,8 +123,12 @@ input {
     .button {
         right: 425px;
     }
-    .hero-img img {
-        width: 350px;
+    .hero {
+        width: 280px;
+    }
+    .logo {
+        width: 150px;
+        padding-bottom: 20px;
     }
     .text h1 {
         text-align: left;
